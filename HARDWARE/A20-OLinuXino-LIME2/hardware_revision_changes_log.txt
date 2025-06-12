@@ -222,3 +222,26 @@ Changed eMMC from KLMAG2GEND-B031(FBGA153)(16G) to KLMAG1JETD-B041(FBGA153)(16G)
 =============================
 
 1. Changed U14 from MCP121T475I-TT vs VDA4510NTA
+
+
+#### Hardware revision M (public release)
+=============================
+
+1. WP of the spi flash connected via NA to PA14;
+2. EFUSE_VDDQ(T9) connected to gnd via r22 and to 2.5V via r23;
+3. TVS D3 moved to bottom under pwr jack;
+4. Added CE print;
+5. Added layer enumeration;
+6. MCP121 changed to VDA4710CTA;
+7. AMS1117 changed to LD1117AG-AD-AA3-A-R;
+8. DDR now K4B4G1646E-BYMA0CV due to availability;
+9. Moved components and wires as far from the edges as possible;
+10. Changed EMMC, NAND, SPI FLASH with FLASH_CONNECTOR. Spi flash left on the board as NA trough NA reriztors since it doesn't get in the way;
+11. C182 changed from 0603 size to 0402 to optimize production.
+
+
+#### Hardware revision N (public release)
+=============================
+
+1. Added VDA4510CTA, and MCP121 now NA;
+2. lm1117 changed to LD1117AG-AD-AA3-A-R.

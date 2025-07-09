@@ -3,7 +3,8 @@ LCD-DRIVER is a common LCD driver board for several Olimex displays.
 Hardware revision B
 ========
 Initial release
-	
+========
+
 Hardware revision C
 ========
 1.	Several component packages changed. Zenners BZV55CxVx/SOD80C changed to BZT52CxVx/SOD-123;
@@ -29,3 +30,15 @@ Hardware revision C
 Note: AP3036BKTR-G1(SOT23-6) and AP3031KTR-G1(SOT23-6) are not pin-to-pin compatible, could be
 made compatible if one of them is rotated 180 degrees and placed at the place of the other! 
 This was tested and confirmed working!
+========
+
+Hardware revision D
+========
+2. R16 changed from 560R to 510R;
+3. Changed year and revision labels;
+4. LCD_CON1 changed to P-B-V-40-LF.
+========
+
+Hardware revision D1
+=========
+1.For LCD10, LCD10TS, and LCD10RTS with LCD from new batch (white instead of blue label on the back) changed R16 from 510R/0402/1% to 681R/0402/1%, because they need higher voltage on VCOM. Instead of 3.88V, this changes makes to 4.4V.

@@ -23,4 +23,13 @@ Hardware revision C
 	0x05	-> 15.4" LCD
 	
 2. Changed the default position of the 5V/3V SMD jumper to be in position 5V.
+
+Hardware revision D
+=====
+1. Improvements for all connectors for better soldering and better compatiblity;
+2. Fixed lables for SYNK Mode and DE mode in the schematic.
+
+Hardware revision E
+=====
+1. Board made wider by 40mils. BOM stays the same!
 	

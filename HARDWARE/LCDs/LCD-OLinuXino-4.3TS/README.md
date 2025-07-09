@@ -25,3 +25,7 @@ Hardware revision D
 Changes in this revision should not affect the user, these are purely manufacturing optimizations!
 1. Changed LCD connector package for easier soldering;
 2. Changed LIME and LIME2 connectors to ones with 0.9mm holes.
+
+Hardware revision D1
+=========
+1. Changed T2 to LMUN2235LT1G becuase of parasitic powering when LCD_BKL is 3.3V and power is off.  

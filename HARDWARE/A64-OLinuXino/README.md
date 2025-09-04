@@ -93,3 +93,27 @@ The initial release of A64-OLinuXino boards was revision C. The six variants of 
 * 4. C93 changed from 24pF to 24pF\50V/5%. C88 and C198 changed from NA/24pF to NA(24pF\50V/5%);
 * 5. Changing 5.1 eMMC at 3.3V (up from 1.8V operation) for better reliability, PWR_PC1 jumper has to be set to position 1-2 for 3.3V operation.
 
+#### Hardware revision G1
+
+* 1. R66 changed from NA na 0R/0402, else the PC1 SPI pin at the UEXT won't be connected;
+* 2. Removed R62(10k) and  R15(22R) to avoid conflicts between EMMC and SPI at UEXT;
+* 3. Added R60/0R i R61/10k to be fully compatible with the original A64 design.
+
+#### Hardware revision H
+
+* 1. Changed the HDMI connector from HDMI-SWM-19-TEST to HDMI-SWM-19-Paste and moved 20mils towards the inside of the board;
+* 2. Q3 changed from Q24MHZ\20pF/20ppm/2P/5x3.2mm to ABM8-24.000MHZ-D2Y-T/3.2x2.5mm. C185 and C187 changed from 33pF\50V/5% to 27pF\50V/5%;
+* 3. Q4 changed from Q25MHz\20pF/20ppm/2P/5x3.2mm to ABM8-25.000MHZ-D2Y-T/3.2x2.5mm. C212 and C213 changed from 33pF\50V/5% to 27pF\50V/5%;
+* 4. D3(1N5822\SS34/SMA) deleted;
+* 5. Improved the power-supply input, the following elements were added:
+	- Annotated IRLML6402(SOT-23) as FET3
+	- Annotated BSS138(SOT23-3) as FET4
+	- Annotated 10k as R20
+	- Annotated 1M as R22
+	- Annotated 10k as R24
+	- Annotated VDA4510CTA(SOT-23) as U16;
+* 6. The 5V_E1 SMD jumper package changed to the smaller package;
+* 7. Added CE_Sign in the white print;
+* 8. USB-OTG1 package changed;
+* 9. FUSE1(FSMD035) changed with diode D3, 1N5819(S4SOD-123) to avoid parasitically powering the board from HDMI;
+* 10. Added protection TVS1 and TVS2, ESDS314DBVR(SOT-23-5) on the LAN chip.
